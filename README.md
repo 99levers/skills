@@ -36,10 +36,3 @@ Only abstract descriptions of your app ("habit app, daily use, monthly plan, no 
 ## A note on evidence
 
 The library shows what apps do, not what works for them. Revenue figures are third-party estimates. The skills say where a recommendation comes from and how confident to be, and suggest how to measure the change.
-
-## Development
-
-```
-claude --plugin-dir plugins/99levers      # try it locally
-claude plugin eval plugins/99levers       # run the eval suite
-```
