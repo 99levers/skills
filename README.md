@@ -6,13 +6,26 @@ Point your agent at your app's code and it will tell you what's missing, build i
 
 ## Install (Claude Code)
 
-```
-/plugin marketplace add 99levers/skills
-/plugin install 99levers@99levers
+Run in a terminal:
+
+```bash
+claude plugin marketplace add 99levers/skills
+claude plugin install 99levers@99levers
 ```
 
-This installs the skills and bundled MCP configuration. Complete browser login
-if prompted. Use `/99levers:login` to check or repair the connection.
+Then start Claude Code in your app's folder with `claude` and sign in to
+99Levers once: run `/mcp`, choose **plugin:99levers:99levers**, then
+**Authenticate**. Your browser opens the 99Levers sign-in. Use
+`/99levers:login` any time to check or repair the connection.
+
+To update after a new release:
+
+```bash
+claude plugin marketplace update 99levers
+claude plugin update 99levers@99levers
+```
+
+Restart Claude Code after updating.
 
 ## Install (Codex)
 
