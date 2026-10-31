@@ -1,0 +1,18 @@
+{
+  "name": "99levers",
+  "owner": {
+    "name": "99Levers",
+    "url": "https://99levers.com"
+  },
+  "metadata": {
+    "description": "Monetization skills for app builders, backed by the 99Levers library of captured paywalls and flows."
+  },
+  "plugins": [
+    {
+      "name": "99levers",
+      "source": "./plugins/99levers",
+      "description": "Review your app's monetization, build proven levers into it, and compare it with any app in the 99Levers library.",
+      "category": "productivity"
+    }
+  ]
+}

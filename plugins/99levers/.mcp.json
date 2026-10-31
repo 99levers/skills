@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "99levers": {
+      "type": "http",
+      "url": "https://api.99levers.com/mcp"
+    }
+  }
+}
