@@ -11,15 +11,42 @@ Point your agent at your app's code and it will tell you what's missing, build i
 /plugin install 99levers@99levers
 ```
 
-This installs the 99Levers plugin and connects the 99Levers MCP server.
+This installs the skills and bundled MCP configuration. Complete browser login
+if prompted. Use `/99levers:login` to check or repair the connection.
+
+## Install (Codex)
+
+Run in a terminal:
+
+```bash
+codex plugin marketplace add 99levers/skills
+codex plugin add 99levers@99levers
+```
+
+Restart Codex, then use `$review`, `$build`, `$compare` or `$login` (choose
+the 99Levers skill if names collide). Each workflow checks library access first.
+If tools are missing, it registers the MCP server when needed and starts browser
+login. `$login` performs the same setup without starting a review or build.
+You complete sign-in and consent in the browser. If the current session cannot
+load the newly connected tools, restart Codex and repeat your request.
+
+To update an existing installation after a new release:
+
+```bash
+codex plugin marketplace upgrade 99levers
+codex plugin add 99levers@99levers
+```
+
+Restart Codex after updating.
 
 ## Commands
 
-| Command | What it does |
-|---|---|
-| `/99levers:review` | Reviews your app's monetization against the library and ranks what to fix or add first. Saves the findings to `.99levers/review.md`. Doesn't change code. |
-| `/99levers:build [technique or #]` | Builds one technique into your app. With no argument, builds the top open finding from your last review. |
-| `/99levers:compare <app or App Store URL>` | Shows what a specific app from the library does differently from yours. |
+| Claude Code | Codex | What it does |
+|---|---|---|
+| `/99levers:login` | `$login` | Checks the MCP connection and helps you sign in. In Codex, also registers the server when needed. |
+| `/99levers:review` | `$review` | Reviews your app's monetization against the library and ranks what to fix or add first. Saves the findings to `.99levers/review.md`. Doesn't change code. |
+| `/99levers:build [technique or #]` | `$build [technique or #]` | Builds one technique into your app. With no argument, builds the top open finding from your last review. |
+| `/99levers:compare <app or App Store URL>` | `$compare <app or App Store URL>` | Shows what a specific app from the library does differently from yours. |
 
 You don't have to type the commands. Asking "why isn't my paywall converting?" or "how does my app compare to Duolingo?" works too.
 

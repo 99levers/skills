@@ -5,6 +5,10 @@ description: Review the monetization of the app in this codebase - paywall, plan
 
 # 99Levers review
 
+First read `../../reference/connection.md` and follow its connection check.
+If tools are missing or authentication fails, perform setup before continuing.
+Use command names for the current host as described there.
+
 Find what is wrong or missing in this app's monetization and rank what to do first. Review only: do not change the app's code. The user runs `/99levers:build` to implement a finding.
 
 Before you start, read these, relative to this skill's base directory:

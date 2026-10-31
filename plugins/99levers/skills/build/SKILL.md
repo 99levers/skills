@@ -6,6 +6,10 @@ argument-hint: "[technique-id | finding number]"
 
 # 99Levers build
 
+First read `../../reference/connection.md` and follow its connection check.
+If tools are missing or authentication fails, perform setup before continuing.
+Use command names for the current host as described there.
+
 Implement one monetization technique in this app, adapted to its code and product.
 
 Target: $ARGUMENTS

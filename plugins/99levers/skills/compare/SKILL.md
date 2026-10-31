@@ -6,6 +6,10 @@ argument-hint: "<app name or App Store URL>"
 
 # 99Levers compare
 
+First read `../../reference/connection.md` and follow its connection check.
+If tools are missing or authentication fails, perform setup before continuing.
+Use command names for the current host as described there.
+
 Put this app's monetization next to one named app's, lever by lever. Compare only: do not change code.
 
 App to compare against: $ARGUMENTS
