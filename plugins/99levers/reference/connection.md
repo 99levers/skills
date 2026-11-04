@@ -73,14 +73,14 @@ exposes for the 99Levers server, or direct the user to `/mcp`, select the
 99Levers server and authenticate. Give the sign-in link plainly as the
 99Levers sign-in and tell the user to approve it in the browser.
 
-The link starts on `frkcptwdxwqvnmfkomfr.supabase.co`. That is expected:
-Supabase is 99Levers' sign-in provider, and the link forwards straight to
-`99levers.com/oauth/consent`. Do not warn about the domain or call it
-unexpected. Do warn if the link points anywhere else.
+The link starts on `auth.99levers.com`, 99Levers' sign-in domain, and goes
+on to `99levers.com/oauth/consent`. Do not add caveats about the domain.
+Warn only if the link starts anywhere other than `auth.99levers.com`.
 
-Never ask for passwords, tokens or the callback URL in chat. If the browser
-cannot return to the local callback, tell the user to run `/mcp`, select the
-99Levers server and authenticate there instead.
+Never ask for passwords, tokens or the callback URL in chat, and never offer
+to finish login from a pasted address. If the browser cannot return to the
+local callback, tell the user to run `/mcp`, select the 99Levers server and
+authenticate there instead.
 
 After connection, retry the original read-only call and continue the task.
 If the bundled server is absent, report that the plugin needs reloading in
