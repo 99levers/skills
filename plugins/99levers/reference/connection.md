@@ -1,8 +1,8 @@
 # Connect to 99Levers
 
-Run this check before a review, build or comparison, and when the user invokes
-the login skill. Setup may update the host's MCP configuration; it does not
-change the user's app code. Preserve the original task and resume it after setup.
+Run this check before a review, build, comparison or aha analysis, and when the
+user invokes the login skill. Setup may update the host's MCP configuration;
+it does not change the user's app code. Preserve the original task and resume it after setup.
 
 ## Check the current session first
 
@@ -94,7 +94,7 @@ registration, completed authentication and verified tool access.
 
 ## Command names in replies
 
-Use `$login`, `$review`, `$build` and `$compare` in Codex (select the 99Levers
+Use `$login`, `$review`, `$build`, `$compare` and `$aha` in Codex (select the 99Levers
 skill if names collide). Use `/99levers:login`, `/99levers:review`,
-`/99levers:build` and `/99levers:compare` in Claude Code. Adapt the command
-examples in the other skill files to the current host.
+`/99levers:build`, `/99levers:compare` and `/99levers:aha` in Claude Code. Adapt
+the command examples in the other skill files to the current host.

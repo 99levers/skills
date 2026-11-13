@@ -36,7 +36,7 @@ codex plugin marketplace add 99levers/skills
 codex plugin add 99levers@99levers
 ```
 
-Restart Codex, then use `$review`, `$build`, `$compare` or `$login` (choose
+Restart Codex, then use `$review`, `$build`, `$compare`, `$aha` or `$login` (choose
 the 99Levers skill if names collide). Each workflow checks library access first.
 If tools are missing, it registers the MCP server when needed and starts browser
 login. `$login` performs the same setup without starting a review or build.
@@ -60,8 +60,9 @@ Restart Codex after updating.
 | `/99levers:review` | `$review` | Reviews your app's monetization against the library and ranks what to fix or add first. Saves the findings to `.99levers/review.md`. Doesn't change code. |
 | `/99levers:build [technique or #]` | `$build [technique or #]` | Builds one technique into your app. With no argument, builds the top open finding from your last review. |
 | `/99levers:compare <app or App Store URL>` | `$compare <app or App Store URL>` | Shows what a specific app from the library does differently from yours. |
+| `/99levers:aha` | `$aha` | Finds your likely aha moment, compares paywall timing with the largest relevant apps, and explains whether to keep or test moving your paywall. |
 
-You don't have to type the commands. Asking "why isn't my paywall converting?" or "how does my app compare to Duolingo?" works too.
+You don't have to type the commands. Asking "why isn't my paywall converting?", "how does my app compare to Duolingo?", or "does my paywall come before users experience value?" works too.
 
 The usual loop is **review → build → build → review**.
 
